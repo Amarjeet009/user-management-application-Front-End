@@ -1,0 +1,80 @@
+.header {
+    width: 121px;
+    height: 49px;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #11254a;
+
+    margin-bottom: 25px;
+}
+
+.main-text {
+    width: 310px;
+    height: 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #11254a;
+
+    margin-bottom: 45px;
+}
+
+.links-description {
+    width: 296px;
+    height: 17px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #11254a;
+
+    margin-bottom: 25px;
+}
+
+.error-code {
+    font-family: Montserrat;
+    font-size: 240px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eaedf3;
+}
+
+.link {
+    width: 61px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3474ee;
+    text-decoration: none;
+}
+
+.main-layout {
+    background-color: white;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+a {
+    margin-right: 20px;
+}

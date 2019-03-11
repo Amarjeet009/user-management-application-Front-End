@@ -1,0 +1,65 @@
+<div class="modal-header">
+    <div class="modal-title" >
+    <h1 style="text-align:center;"><strong>Connect To UMA</strong></h1>
+    </div>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+          <form [formGroup]="signupForm" (ngSubmit)="registerUser()">
+              <div class="form-group">
+                <label  class="hide">FirstName</label>
+                <input type="text" class="form-control form-group-lg" formControlName="firstName" required  placeholder="FirstName">
+              </div>
+              <div class="form-group">
+                <label  class="hide">LastName</label>
+                <input type="text" class="form-control form-group-lg" formControlName="lastName" required placeholder="LastName">
+              </div>
+              <div class="form-group">
+                  <label  class="hide">UserName</label>
+                  <input type="email" class="form-control form-group-lg" formControlName="username" required  placeholder="UserName">
+                </div>
+                <div class="form-group">
+                    <label  class="hide">Password</label>
+                    <input type="password" class="form-control form-group-lg"  formControlName="password" required placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                      <label  class="hide">Confirm Password</label>
+                      <input [type]="inputType" class="form-control form-group-lg" formControlName="confirmpass" required placeholder="Confirm Password">
+                      <div>
+                          <a *ngIf="!visible" (click)="show()" style="color:blue;text-decoration: underline;">
+                             View Password
+                              </a>
+                              <a *ngIf="visible" (click)="hide()" style="color:red;text-decoration: underline;">
+                                  Hide Password
+                              </a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="hide">Select Country</label>
+                        <select type="text" class="form-control form-group-lg" (change)="onSelect($event.target.value)" formControlName="country" required>
+                          <option *ngFor="let cont Of countryList" value="{{cont.name}}">{{cont.name}}</option>
+                          </select>
+                  
+                      </div>
+                      <div class="form-group">
+                          <label  class="hide">Contact Number</label>
+                          <input type="number" class="form-control"  placeholder="{{phoneCode}}">
+                          <input type="number" class="form-control form-group-md" formControlName="contact"  placeholder="Contact Number">
+                        </div>  
+              <div class="form-group">
+                <button type="submit" class="btn c-theme-btn btn-md c-btn-uppercase c-btn-bold c-btn-square c-btn-login">SignUp</button>
+                <span class="c-text-account" (click)="activeModal.close('Close click')">Already have An Account
+                    <button type="button" class="btn c-btn-dark-1 btn c-btn-uppercase  c-btn-bold c-btn-slim c-btn-border-2x c-btn-square c-btn-signup"
+                     (click)="openLoginModel()" >login</button></span>
+              </div>
+          
+            </form>
+       </div>
+     </div>
+   </div>
+  </div>

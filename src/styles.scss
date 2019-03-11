@@ -1,0 +1,153 @@
+/* You can add global styles to this file, and also import other style files */
+
+	.c-content-login-form .modal-dialog .modal-content .modal-body {
+    padding: 10px 40px 30px 40px;
+}
+.c-font-24 {
+    font-size: 24px;
+}
+
+.c-font-sbold {
+    font-weight: 500 !important;
+}
+.form-control {
+  
+    border: 1px solid #c2cad8 !important;
+	background-position: center bottom,center calc(0% - 1px) !important;
+	
+	padding:2px 5px !important; 
+	}
+	.form-control.input-lg {
+    font-weight: 300;
+    font-size: 14px !important;
+}
+.c-checkbox label > .box {
+    top: 1px !important;
+    border: 2px solid #d0d7de ;
+    height: 20px ;
+    width: 20px;
+    z-index: 5 !important;
+    -webkit-transition-delay: 0.2s !important;
+    -moz-transition-delay: 0.2s !important;
+    transition-delay: 0.2s !important;
+}
+.c-checkbox label > span {
+    display: block !important;
+    position: absolute !important;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s !important;
+}
+.c-checkbox {
+    position: relative;
+}
+.c-checkbox input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+}
+.c-checkbox label {
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.c-content-login-form .modal-dialog .modal-content .modal-body .c-btn-login {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.c-theme-btn.btn {
+    color: #ffffff;
+    background: #128fd0;
+    border-color: #128fd0;
+}
+
+.c-btn-uppercase.btn-md {
+    font-size: 16px;
+    padding: 10px 20px 9px 20px;
+}
+
+.c-content-login-form .modal-dialog .modal-content .modal-body .c-btn-forgot {
+    margin-top: 18px;
+    float: right;
+    display: inline-block;
+	    font-family: "Roboto Condensed", sans-serif;
+}
+.c-content-login-form .modal-dialog .modal-content .modal-footer {
+    background: #f7f7f7;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.c-no-border {
+    border: 0 !important;
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+.c-content-login-form .modal-dialog .modal-content .modal-footer .c-text-account {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.c-content-login-form .modal-dialog .modal-content .modal-footer .c-btn-signup {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn.c-btn-border-2x.c-btn-uppercase {
+    padding: 6px 20px 4px 20px;
+}
+
+.c-btn-border-2x.c-btn-dark-1 {
+    border-color: #525e64;
+    color: #525e64;
+    background: none;
+    border:2px solid #525e64;
+}
+
+.c-btn-uppercase.btn {
+    font-size: 14px;
+    padding: 7px 20px 5px 20px;
+}
+
+.btn.c-btn-border-2x {
+    border-width: 2px;
+    padding: 6px 20px 4px 20px;
+}
+.c-btn-bold {
+    font-weight: bold;
+}
+.lightgray{color: #a6a9ab;}
+.c-checkbox label > .check {
+    top: -2px;
+    left: 6px;
+    width: 10px;
+    height: 20px;
+    border: 2px solid #d0d7de;
+    border-top: none;
+    border-left: none;
+    opacity: 0;
+    z-index: 5;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+input::placeholder  {
+    font-size: 14px !important;
+	color:#999 !important;
+}
+
+.c-theme-btn.btn:hover{color: #ffffff;
+    background: #27a8b4;
+    border-color: #27a8b4; }
+
+	
+	

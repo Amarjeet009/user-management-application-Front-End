@@ -1,0 +1,21 @@
+<nav class="navbar ms-lead-navbar navbar-mode">
+    <div class="container container-full" id="home">
+        <div class="navbar-header">
+          <a class="navbar-brand" [routerLink]="['/']">
+             <img src="assets/img/demo/logo-navbar.png" alt=""> 
+            <span class="ms-title" style="margin-left: -5px;"><strong>User Management Application</strong></span>            </a>		   </div>
+        <div id="navbar" class="">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a [routerLink]="['/']"> <i class="zmdi zmdi-home"></i> Home </a> </li>
+            <li><a [routerLink]="['/']"><i class="zmdi zmdi-collection-image-o"></i> About US</a></li>
+            <li><a href="contact_us.html"><i class="zmdi zmdi-phone zmdi-hc-fw"></i> Contact Us</a> </li>
+            <li *ngIf="!isVisible"><a (click)="openLoginModel()"><i class="zmdi zmdi-user"></i> SignIn</a> </li>
+            <li *ngIf="isVisible"><a (click)="logout()"><i class="zmdi zmdi-power"></i> {{fullName}}</a></li>
+          </ul>
+        </div>
+        <a href="javascript:void(0)" class="sb-toggle-left btn-navbar-menu">
+          <i class="zmdi zmdi-menu"></i> </a>        
+          </div>
+       {{hero}}   
+  </nav>
+

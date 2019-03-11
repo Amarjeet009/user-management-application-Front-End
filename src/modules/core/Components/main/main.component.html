@@ -1,0 +1,173 @@
+<!-- <div class="bg-light index-1 intro-full-next">
+    <div class="wrap color-dark"  style="background:#2e87d9 !important">
+
+  </div>
+</div> -->
+<div class="bg-light index-1 intro-full-next">
+  <div class="wrap bg-warning color-dark" style="background:#2e87d9 !important">
+      <div  id="intro-next">
+          <ngb-carousel>
+              <ng-template ngbSlide *ngFor="let data of homeArr">
+                    <img src="assets/img/demo/{{data.img}}"  alt="{{data.label}}" width="100%" height="550px">
+                <div class="carousel-caption">
+                  <h3><strong>{{data.label}}</strong></h3>
+                  <p><strong>{{data.detail}}</strong></p>
+                </div>
+              </ng-template>
+            </ngb-carousel>       
+</div>
+    <div class="container" id="intro-next">
+      <h2 class="text-center color-white"><b>60 Second Sign Up</b></h2>
+      <p class="lead text-center color-white">Create your
+        account in less than a minute. It is free, <span>completely anonymous and secure.</span></p>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 card" *ngFor="let data Of homeSubArr">
+            <div class="text-center card-block">
+              <img src="assets/img/{{data.img}}" class="img-thumbnail" alt="">
+    
+              <p class="">{{data.detail}}</p>
+    
+            </div>
+          </div>
+    </div>
+      <a class="btn btn-info btn-raised pos26" (click)="openSignUpModel()"><i class="zmdi zmdi-account-add ico"></i> Sign Up</a>
+    </div>
+    <!-- container -->
+  </div>
+  <section id="services" class="">
+    <div class="ms-hero-img-meeting ms-hero-bg-info ms-bg-fixed">
+      <div class="container">
+        <div class="text-center mb-2">
+          <h2 class="wow fadeInDown animation-delay-4"><b>Trends</b></h2>
+
+        </div>
+        <!-- <div class="col-md-12">
+          <p class="wow zoomInDown text-center"><span class="bluetext"><b>BITCOIN STATUS LAST 24 HOURS</b></span><br />
+            <span class="bluetext"><b>HIGH:</b></span> 59,850.00 <span class="bluetext"><b>LOW:</b></span> 54,000.00
+            <span class="bluetext"><b>VOLUME:</b></span> 4,314.40
+          </p>
+        </div> -->
+
+          <div class="col-md-12">
+            <div class="panel-group ms-collapse color-dark">
+              <section class="ms-component-section row">
+                
+                  <div class="col-lg-4 col-md-6 col-sm-6 card" *ngFor="let data Of trendreResponse">
+                      <div class="text-center card-block">
+                        <img src="assets/img/demo/{{data.img}}" class="img-thumbnail" alt="">
+
+                        <p class="">{{data.detail}}</p>
+              
+                      </div>
+                    </div>
+              </section>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="container pt-2">
+      <h2 class=" text-center wow fadeInDown animation-delay-4"><b>About Us</b></h2>
+      <p class="right-line"> &nbsp;</p>
+      <div class="row">
+        <div class="col-md-12">
+          <!--  <h3 class="color-primary wow fadeInUp animation-delay-2"></h3> -->
+          <p class="wow fadeInUp animation-delay-2 text-justify">CryptoVpay is an all-in-one online Bitcoin wallet
+            which supports multiple cryptocurrencies
+            such as Bitcoin (BTC), Litecoin (LTC), Dogecoin (DOGE) and others. It enables fast and easy direct
+            transactions and allows instant
+            exchange between different cryptocurrencies in one personal account. Combining usability with high level
+            privacy , anonymity and
+            security, cryptovpay offers free multi-cryptocurrency accounts,
+            which are accessible 24/7 worldwide on your laptop, desktop or mobile devices alike.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <div class="container pt-2">
+      <h2 class="color-primary text-center wow fadeInDown animation-delay-4"><b>User Review</b></h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="card mt-4 card-danger wow zoomInUp animation-delay-7">
+            <div class="ms-hero-bg-danger ms-hero-img-city">
+              <img src="assets/img/demo/avatar1.jpg" alt="..." class="img-avatar-circle"> </div>
+            <div class="card-block pt-6 text-center">
+              <h3 class="color-danger">Victoria Smith</h3>
+              <div class="text-center">
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star-half zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star-outline zmdi-hc-fw"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur alter adipisicing elit. Facilis, natuse inse voluptates
+                officia repudiandae beatae magni es magnam autem molestias.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card mt-4 card-info wow zoomInUp animation-delay-7">
+            <div class="ms-hero-bg-info ms-hero-img-city">
+              <img src="assets/img/demo/avatar2.jpg" alt="..." class="img-avatar-circle"> </div>
+            <div class="card-block pt-6 text-center">
+              <h3 class="color-info">Charlie Durant</h3>
+              <div class="text-center">
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star-half zmdi-hc-fw"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur alter adipisicing elit. Facilis, natuse inse voluptates
+                officia repudiandae beatae magni es magnam autem molestias.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card mt-4 card-warning wow zoomInUp animation-delay-7">
+            <div class="ms-hero-bg-warning ms-hero-img-city">
+              <img src="assets/img/demo/avatar3.jpg" alt="..." class="img-avatar-circle"> </div>
+            <div class="card-block pt-6 text-center">
+              <h3 class="color-warning">Joan Fawert</h3>
+              <div class="text-center">
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+                <a><i class="mr-1 zmdi zmdi-star zmdi-hc-fw"></i></a>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur alter adipisicing elit. Facilis, natuse inse voluptates
+                officia repudiandae beatae magni es magnam autem molestias.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a class="btn btn-raised color-success btn-white">View All</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+      <div class="container pt-2">
+          <h2 class="color-primary text-center wow fadeInDown animation-delay-4"><b>Other User Review</b></h2>
+          <ul class="list-group list-group-flush" *ngFor="let data Of postResponse| paginate: { itemsPerPage: 5, currentPage: p }" style="text-align: left">
+            <li class="list-group-item list-group-item-primary" *ngIf="userMap[data.id] != null"> <strong>Name</strong>: {{userMap[data.id]}}</li>
+            <li class="list-group-item list-group-item-primary" *ngIf="userMap[data.id] == null"> <strong>Name</strong>: Anonymous User</li>
+            <li class="list-group-item list-group-item-secondary"><strong>Title</strong>: {{data.title}}</li>
+            <li class="list-group-item list-group-item-info"><strong>Post</strong>: {{data.body}}</li>
+          &nbsp;
+          </ul>
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </div>
+  </section>
+
+</div>

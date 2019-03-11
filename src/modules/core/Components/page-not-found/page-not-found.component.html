@@ -1,0 +1,30 @@
+<p>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+</p>
+<p>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+  </p>
+<div class="main-layout" fxLayout="row" fxLayoutAlign="space-around center" >
+    <div fxFlex="50">
+      <div class="header">Oops!</div>
+      <div class="main-text">We can’t seem to find the page you're looking for.</div>
+      <div class="links-description">Here are some helpful links instead:</div>
+      <a class="link" [routerLink]="['/']">Home</a>
+      <a class="link" [routerLink]="['/user/profile']">User</a>
+      <a class="link" (click)="clicktoOpen()">Login</a>
+    </div>
+
+    <div class="error-code" fxFlex="50">404</div>
+</div>
+

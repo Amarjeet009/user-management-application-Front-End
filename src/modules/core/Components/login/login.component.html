@@ -1,0 +1,48 @@
+<div class="modal-header">
+  <div class="modal-title">
+    <h6 style="text-align:center;"><strong>Connect To UMA</strong></h6>
+  </div>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+          <div class="form-group">
+            <label class="hide">Email</label>
+            <input type="email" class="form-control form-group-lg" formControlName="username" placeholder="Email"
+              required />
+          </div>
+          <div class="form-group">
+            <label class="hide">Password</label>
+            <input [type]="inputType" class="form-control form-group-lg" formControlName="password" placeholder="Password"
+              required />
+            <div>
+              <a *ngIf="!visible" (click)="show()" style="color:blue;text-decoration: underline;">
+                View Password
+              </a>
+              <a *ngIf="visible" (click)="hide()" style="color:red;text-decoration: underline;">
+                Hide Password
+              </a>
+            </div>
+          </div>
+            <div class="form-group">
+              <button type="submit" class="btn c-theme-btn btn-md c-btn-uppercase c-btn-bold c-btn-square c-btn-login">Login</button>
+              <span (click)="activeModal.close('Close click')">
+                <a (click)="openForgotPasswordModel()" class="c-btn-forgot">Forgot Your Password ?</a>
+              </span>
+            </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <span class="c-text-account" (click)="activeModal.close('Close click')">Don't Have An Account Yet ?
+    <button type="button" class="btn c-btn-dark-1 btn c-btn-uppercase c-btn-bold c-btn-slim c-btn-border-2x c-btn-square c-btn-signup"
+      (click)="openSignUpModel()">SignUp</button></span>
+</div>
