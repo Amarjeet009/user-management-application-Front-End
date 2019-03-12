@@ -13,6 +13,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running Project
+Go to folder with CMD or Terminal
+1. `npm install`
+2. `npm start` will Navigate to `http://localhost:5000/` or if you want to open with 'http://localhost:4200/' you can run `ng serve`
+3. to rum on other specific port use CLI command `ng serve --port 8080`
+
 
 ## Running unit tests
 
